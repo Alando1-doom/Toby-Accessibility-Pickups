@@ -1,5 +1,0 @@
-#include decorate/DEC_HLTH.txt
-#include decorate/DEC_ARMR.txt
-#include decorate/DEC_PRX1.txt
-#include decorate/DEC_POW.txt
-#include decorate/DEC_KEYS.txt
