@@ -1,0 +1,20 @@
+ACTOR NightVisors : CustomInventory replaces Infrared
+{
+    +COUNTITEM
+    +INVENTORY.ALWAYSPICKUP
+    Inventory.PickupSound "misc/getvisor"
+    Inventory.PickupMessage "$GOTVISOR"
+    States
+    {
+    Spawn:
+        PVIS A 6 Bright A_SpawnItemEx("VisorPickupChecker", 0, 0, 0, 0, 0, 0, 0, SXF_NOCHECKPOSITION, 0)
+        PVIS B 6
+        PVIS A 6 Bright
+        PVIS B 6
+        Loop
+    Pickup:
+        TNT1 A 0 A_PlaySound("ann/visor")
+        TNT1 A 0 A_GiveInventory("Infrared_TO", 1)
+        Stop
+    }
+}
