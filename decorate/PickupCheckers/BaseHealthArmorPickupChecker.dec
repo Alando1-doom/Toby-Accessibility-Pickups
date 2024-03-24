@@ -1,5 +1,30 @@
-ACTOR HealthPickupChecker_Stimpack: BaseHealthArmorPickupChecker
+ACTOR BaseHealthArmorPickupChecker
 {
+    Health 10000000000000000000000
+    Radius 8
+    Height 8
+    Speed 0
+    Mass 2000000000000
+    PainChance 0
+    DONTHURTSHOOTER
+    MONSTER
+    +JUSTHIT
+    +DONTGIB
+    +FLOORCLIP
+    +NOTARGET
+    -COUNTKILL
+    -SHOOTABLE
+    +NOBLOOD
+    +FASTER
+    +ALWAYSFAST
+    +NOCLIP
+    +INVULNERABLE
+    +GHOST
+    +LOOKALLAROUND
+    +SEEINVISIBLE
+    //PainSound "null"
+    //DeathSound "null"
+    MeleeDamage 0
     States
     {
     Spawn:
@@ -26,7 +51,7 @@ ACTOR HealthPickupChecker_Stimpack: BaseHealthArmorPickupChecker
         TNT1 A 1 A_Pain
         Goto See
     ISeeYou:
-         TNT1 A 1 A_PlaySoundEx("misc/health/medium", "SoundSlot5", 0, 0)
+         TNT1 A 1
          TNT1 A 4
          Goto Death
     Death:
