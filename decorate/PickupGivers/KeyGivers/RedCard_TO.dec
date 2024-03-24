@@ -1,0 +1,20 @@
+ACTOR RedCard_TO : CustomInventory 13
+{
+    inventory.pickupmessage "You got the red key card."
+    inventory.pickupsound "misc/keycard"
+    -COUNTITEM
+    States
+    {
+    Spawn:
+        RKEY A 0 A_SpawnItemEx("KeyPickupChecker", 0, 0, 0, 0, 0, 0, 0, SXF_NOCHECKPOSITION, 0)
+        RKEY A 10
+        RKEY B 10 Bright
+        RKEY A 10
+        RKEY B 10 Bright
+        Loop
+    Pickup:
+        TNT1 A 0 A_PlaySound("keys/redkeycard")
+        TNT1 A 1 A_GiveInventory("RedCard", 1)
+        Stop
+    }
+}

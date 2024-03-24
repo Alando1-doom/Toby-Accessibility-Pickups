@@ -1,0 +1,31 @@
+Actor ArmorBonus_TO : BasicArmorBonus replaces ArmorBonus
+{
+    Radius 20
+    Height 16
+    Inventory.Pickupmessage "$GOTARMBONUS"
+    Inventory.PickupSound "armor/bonus"
+    Inventory.Icon "BON2A0"
+    Inventory.PickupFlash "ArmorBonus_ID2"
+    Armor.Savepercent 33.335
+    Armor.Saveamount 1
+    Armor.Maxsaveamount 200
+    +COUNTITEM
+    +INVENTORY.ALWAYSPICKUP
+    States
+    {
+    Spawn:
+        BON2 A 6
+        BON2 A 0 Bright A_SpawnItemEx("ArmorPickupChecker_Bonus", 0, 0, 0, 0, 0, 0, 0, SXF_NOCHECKPOSITION, 0)
+        BON2 B 6
+        BON2 B 0 Bright A_SpawnItemEx("ArmorPickupChecker_Bonus", 0, 0, 0, 0, 0, 0, 0, SXF_NOCHECKPOSITION, 0)
+        BON2 C 6
+        BON2 C 0 Bright A_SpawnItemEx("ArmorPickupChecker_Bonus", 0, 0, 0, 0, 0, 0, 0, SXF_NOCHECKPOSITION, 0)
+        BON2 D 6
+        BON2 D 0 Bright A_SpawnItemEx("ArmorPickupChecker_Bonus", 0, 0, 0, 0, 0, 0, 0, SXF_NOCHECKPOSITION, 0)
+        BON2 C 6
+        BON2 C 0 Bright A_SpawnItemEx("ArmorPickupChecker_Bonus", 0, 0, 0, 0, 0, 0, 0, SXF_NOCHECKPOSITION, 0)
+        BON2 B 6
+        BON2 B 0 Bright A_SpawnItemEx("ArmorPickupChecker_Bonus", 0, 0, 0, 0, 0, 0, 0, SXF_NOCHECKPOSITION, 0)
+        Loop
+    }
+}

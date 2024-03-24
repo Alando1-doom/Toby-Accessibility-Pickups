@@ -1,0 +1,6 @@
+ACTOR MegasphereHealth_TO : Health    // for manipulation by Dehacked
+{
+    Inventory.Amount 200
+    Inventory.MaxAmount 200
+    +INVENTORY.ALWAYSPICKUP
+}

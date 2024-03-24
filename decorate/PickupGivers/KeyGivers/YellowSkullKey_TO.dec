@@ -1,0 +1,20 @@
+Actor YellowSkullKey_TO : CustomInventory 39
+{
+    inventory.pickupmessage "You got the yellow skull key"
+    inventory.pickupsound "misc/skullkey"
+    -COUNTITEM
+    States
+    {
+    Spawn:
+        YSKU A 0 A_SpawnItemEx("KeyPickupChecker", 0, 0, 0, 0, 0, 0, 0, SXF_NOCHECKPOSITION, 0)
+        YSKU A 10
+        YSKU B 10 Bright
+        YSKU A 10
+        YSKU B 10 Bright
+        Loop
+    Pickup:
+        TNT1 A 0 A_PlaySound("keys/yellowskull")
+        TNT1 A 1 A_GiveInventory("YellowSkull", 1)
+        Stop
+    }
+}

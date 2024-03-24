@@ -1,0 +1,109 @@
+//Announcers
+//Armor announcers
+#include "decorate/Announcers/ArmorAnnouncers/Armor2Ann.dec"
+#include "decorate/Announcers/ArmorAnnouncers/ArmorAnn.dec"
+#include "decorate/Announcers/ArmorAnnouncers/ArmorBonusAnn.dec"
+
+//Health announcers
+#include "decorate/Announcers/HealthAnnouncers/HealthBonusAnn.dec"
+#include "decorate/Announcers/HealthAnnouncers/MedikitAnn.dec"
+#include "decorate/Announcers/HealthAnnouncers/StimpackAnn.dec"
+
+//Flashes
+//Armor flashes
+#include "decorate/Flashes/ArmorFlashes/Armor_ID2.dec"
+#include "decorate/Flashes/ArmorFlashes/Armor2_ID2.dec"
+#include "decorate/Flashes/ArmorFlashes/ArmorBonus_ID2.dec"
+
+//Health flashes
+#include "decorate/Flashes/HealthFlashes/HealthBonus_ID2.dec"
+#include "decorate/Flashes/HealthFlashes/Medikit_ID2.dec"
+#include "decorate/Flashes/HealthFlashes/Stimpack_ID2.dec"
+
+//Inventory checkers
+//Health and armor
+#include "decorate/InventoryCheckers/ArmorInventoryChecker.dec"
+#include "decorate/InventoryCheckers/HealthInventoryChecker.dec"
+
+//Pickup checkers
+#include "decorate/PickupCheckers/BaseHealthArmorPickupChecker.dec"
+//Armor pickup checkers
+#include "decorate/PickupCheckers/ArmorPickupCheckers/ArmorPickupChecker_Blue.dec"
+#include "decorate/PickupCheckers/ArmorPickupCheckers/ArmorPickupChecker_Bonus.dec"
+#include "decorate/PickupCheckers/ArmorPickupCheckers/ArmorPickupChecker.dec"
+
+//Powerup pickup checkers
+#include "decorate/PickupCheckers/DoomPowerupCheckers/BerserkPickupChecker.dec"
+#include "decorate/PickupCheckers/DoomPowerupCheckers/BlurSpherePickupChecker.dec"
+#include "decorate/PickupCheckers/DoomPowerupCheckers/MapPickupChecker.dec"
+#include "decorate/PickupCheckers/DoomPowerupCheckers/MegaSpherePickupChecker.dec"
+#include "decorate/PickupCheckers/DoomPowerupCheckers/ShieldPickupChecker.dec"
+#include "decorate/PickupCheckers/DoomPowerupCheckers/SoulSpherePickupChecker.dec"
+#include "decorate/PickupCheckers/DoomPowerupCheckers/SuitPickupChecker.dec"
+#include "decorate/PickupCheckers/DoomPowerupCheckers/VisorPickupChecker.dec"
+
+//Health pickup checkers
+#include "decorate/PickupCheckers/HealthPickupCheckers/HealthPickupChecker_Medikit.dec"
+#include "decorate/PickupCheckers/HealthPickupCheckers/HealthPickupChecker_Stimpack.dec"
+#include "decorate/PickupCheckers/HealthPickupCheckers/HealthPickupChecker.dec"
+
+//Key pickup checkers
+#include "decorate/PickupCheckers/KeyPickupCheckers/KeyPickupChecker.dec"
+
+//V3-0 checkers
+#include "decorate/PickupCheckers/v3-0/AmmoPickupChecker_V3-0.dec"
+#include "decorate/PickupCheckers/v3-0/ArmorPickupChecker_V3-0.dec"
+#include "decorate/PickupCheckers/v3-0/HealthPickupChecker_V3-0.dec"
+#include "decorate/PickupCheckers/v3-0/ProxyChecker.dec"
+#include "decorate/PickupCheckers/v3-0/WeaponPickupChecker_V3-0.dec"
+
+//v3-0 checkers inventory item
+#include "decorate/PickupCheckers/v3-0/Inventory/MyExistence.dec"
+
+//Pickup givers
+//Armor pickup givers
+#include "decorate/PickupGivers/ArmorPickupGivers/BlueArmor_Pickup.dec"
+#include "decorate/PickupGivers/ArmorPickupGivers/GreenArmor_Pickup.dec"
+
+//Health pickup givers
+#include "decorate/PickupGivers/HealthPickupGivers/Medikit_Pickup.dec"
+#include "decorate/PickupGivers/HealthPickupGivers/Stimpack_Pickup.dec"
+
+//Key givers
+#include "decorate/PickupGivers/KeyGivers/BlueCard_TO.dec"
+#include "decorate/PickupGivers/KeyGivers/BlueSkullKey_TO.dec"
+#include "decorate/PickupGivers/KeyGivers/RedCard_TO.dec"
+#include "decorate/PickupGivers/KeyGivers/RedSkullKey_TO.dec"
+#include "decorate/PickupGivers/KeyGivers/YellowCard_TO.dec"
+#include "decorate/PickupGivers/KeyGivers/YellowSkullKey_TO.dec"
+
+//Powerup givers
+#include "decorate/PickupGivers/PowerupGivers/BioSuit.dec"
+#include "decorate/PickupGivers/PowerupGivers/ComputerMap2.dec"
+#include "decorate/PickupGivers/PowerupGivers/Invisibility.dec"
+#include "decorate/PickupGivers/PowerupGivers/NightVisors.dec"
+#include "decorate/PickupGivers/PowerupGivers/Shield.dec"
+#include "decorate/PickupGivers/PowerupGivers/SuperCharge.dec"
+
+//Pickups
+//Armor pickups
+#include "decorate/Pickups/ArmorPickups/ArmorBonus_TO.dec"
+#include "decorate/Pickups/ArmorPickups/BlueArmor_TO.dec"
+#include "decorate/Pickups/ArmorPickups/GreenArmor_TO.dec"
+
+//Health pickups
+#include "decorate/Pickups/HealthPickups/HealthBonus_TO.dec"
+#include "decorate/Pickups/HealthPickups/Medikit_TO.dec"
+#include "decorate/Pickups/HealthPickups/Stimpack_TO.dec"
+
+//Powerup pickups (but actually powerup givers, there are like two layers of powerup givers here)
+#include "decorate/Pickups/PowerupPickups/Allmap_TO.dec"
+#include "decorate/Pickups/PowerupPickups/Berserk_TO.dec"
+#include "decorate/Pickups/PowerupPickups/BlueArmorForMegasphere_TO.dec"
+#include "decorate/Pickups/PowerupPickups/BlurSphere_TO.dec"
+#include "decorate/Pickups/PowerupPickups/Infrared_TO.dec"
+#include "decorate/Pickups/PowerupPickups/InvulnerabilitySphere_TO.dec"
+#include "decorate/Pickups/PowerupPickups/Megasphere_TO.dec"
+#include "decorate/Pickups/PowerupPickups/MegasphereHealth_TO.dec"
+#include "decorate/Pickups/PowerupPickups/RadSuit_TO.dec"
+#include "decorate/Pickups/PowerupPickups/Soulsphere_TO.dec"

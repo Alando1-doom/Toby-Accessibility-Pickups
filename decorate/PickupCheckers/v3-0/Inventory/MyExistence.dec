@@ -1,0 +1,18 @@
+//***************************************************************
+// Checker Counter
+//***************************************************************
+
+ACTOR MyExistence : Inventory
+{
+    inventory.pickupmessage " "
+    inventory.icon "TNT1A0"
+    inventory.amount 2
+    inventory.maxamount 2
+    inventory.InterHubAmount 0
+    States
+    {
+    Spawn:
+        TNT1 A 6
+        loop
+    }
+}

@@ -1,0 +1,20 @@
+ACTOR Shield : CustomInventory replaces InvulnerabilitySphere
+{
+    Game Doom
+    SpawnID 132
+    +COUNTITEM
+    +INVENTORY.ALWAYSPICKUP
+    Inventory.PickupMessage "$GOTINVUL"
+    Inventory.PickupSound "misc/getinv"
+    States
+    {
+    Spawn:
+        PINV A 0 Bright A_SpawnItemEx("ShieldPickupChecker", 0, 0, 0, 0, 0, 0, 0, SXF_NOCHECKPOSITION, 0)
+        PINV ABCDCB 6 Bright
+        Loop
+    Pickup:
+        TNT1 A 0 A_GiveInventory("InvulnerabilitySphere_TO", 1)
+        TNT1 A 0 A_PlaySound("misc/invann")
+        Stop
+    }
+}

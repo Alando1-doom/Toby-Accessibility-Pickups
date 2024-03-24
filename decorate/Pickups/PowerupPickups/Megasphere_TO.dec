@@ -1,0 +1,21 @@
+ACTOR Megasphere_TO : CustomInventory replaces Megasphere
+{
+    Game Doom
+    SpawnID 132
+    +COUNTITEM
+    +INVENTORY.ALWAYSPICKUP
+    Inventory.PickupMessage "$GOTMSPHERE"
+    Inventory.PickupSound "misc/getmega"
+    States
+    {
+    Spawn:
+        MEGA A 0 Bright A_SpawnItemEx("MegaSpherePickupChecker", 0, 0, 0, 0, 0, 0, 0, SXF_NOCHECKPOSITION, 0)
+        MEGA ABCDCB 6 BRIGHT
+        Loop
+    Pickup:
+        TNT1 A 0 A_GiveInventory("BlueArmorForMegasphere_TO", 1)
+        TNT1 A 0 A_GiveInventory("MegasphereHealth_TO", 1)
+        TNT1 A 0 A_PlaySound("misc/megaann")
+        Stop
+    }
+}
