@@ -1,0 +1,17 @@
+ACTOR RadSuit_TO : PowerupGiver
+{
+    Game Doom
+    SpawnID 136
+    Height 46
+    +INVENTORY.AUTOACTIVATE
+    +INVENTORY.ALWAYSPICKUP
+    Inventory.MaxAmount 0
+    Inventory.PickupMessage "$GOTSUIT"
+    Powerup.Type IronFeet
+    States
+    {
+    Spawn:
+        SUIT A -1 Bright
+        Stop
+    }
+}

@@ -1,0 +1,23 @@
+ACTOR GreenArmor_TO : BasicArmorPickup
+{
+    Radius 20
+    Height 16
+    Inventory.Pickupmessage "$GOTARMOR"
+    Inventory.PickupSound "armor/green"
+    //Inventory.PickupFlash "Armor_ID"
+    Inventory.Icon "ARM1A0"
+    Armor.SavePercent 33.335
+    Armor.SaveAmount 100
+    States
+    {
+    Spawn:
+        ARM1 A 6 A_SpawnItemEx("ArmorPickupChecker", 0, 0, 0, 0, 0, 0, 0, SXF_NOCHECKPOSITION, 0)
+        ARM1 A 0 A_SpawnItemEx("ArmorInventoryChecker", 0, 0, 0, 0, 0, 0, 0, SXF_NOCHECKPOSITION, 0)
+        ARM1 B 6 Bright
+        ARM1 A 6
+        ARM1 B 6 Bright
+        ARM1 A 6
+        ARM1 B 6 Bright
+        Loop
+    }
+}

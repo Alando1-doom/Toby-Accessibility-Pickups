@@ -1,0 +1,20 @@
+ACTOR SuperCharge : CustomInventory replaces Soulsphere
+{
+    Game Doom
+    SpawnID 132
+    +COUNTITEM
+    +INVENTORY.ALWAYSPICKUP
+    Inventory.PickupMessage "$GOTSUPER"
+    Inventory.PickupSound "misc/getsoul"
+    States
+    {
+    Spawn:
+        SOUL A 0 Bright A_SpawnItemEx("SoulSpherePickupChecker", 0, 0, 0, 0, 0, 0, 0, SXF_NOCHECKPOSITION, 0)
+        SOUL ABCDCB 6 Bright
+        Loop
+    Pickup:
+        TNT1 A 0 A_GiveInventory("Soulsphere_TO", 1)
+        TNT1 A 0 A_PlaySound("misc/soulann")
+        Stop
+    }
+}

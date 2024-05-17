@@ -1,0 +1,20 @@
+ACTOR ComputerMap2 : CustomInventory replaces Allmap
+{
+    Game Doom
+    SpawnID 132
+    +COUNTITEM
+    +INVENTORY.ALWAYSPICKUP
+    Inventory.PickupSound "misc/getmap"
+    Inventory.PickupMessage "$GOTMAP"
+    States
+    {
+    Spawn:
+        PMAP A 0 Bright A_SpawnItemEx("MapPickupChecker", 0, 0, 0, 0, 0, 0, 0, SXF_NOCHECKPOSITION, 0)
+        PMAP ABCD 6 Bright
+        Loop
+    Pickup:
+        TNT1 A 0 A_PlaySound("ann/map")
+        TNT1 A 0 A_GiveInventory("Allmap_TO", 1)
+        Stop
+    }
+}

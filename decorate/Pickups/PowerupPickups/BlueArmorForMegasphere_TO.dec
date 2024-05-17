@@ -1,0 +1,6 @@
+// DeHackEd can only modify the blue armor's type, not the megasphere's.
+ACTOR BlueArmorForMegasphere_TO : BlueArmor
+{
+    Armor.SavePercent 50
+    Armor.SaveAmount 200
+}
