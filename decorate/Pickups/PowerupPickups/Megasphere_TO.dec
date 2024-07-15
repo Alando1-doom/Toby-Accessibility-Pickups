@@ -10,7 +10,7 @@ ACTOR Megasphere_TO : CustomInventory replaces Megasphere
     {
     Spawn:
         MEGA A 0 Bright A_SpawnItemEx("MegaSpherePickupChecker", 0, 0, 0, 0, 0, 0, 0, SXF_NOCHECKPOSITION, 0)
-        MEGA ABCDCB 6 BRIGHT
+        MEGA ABCDABCDABCD 5 BRIGHT
         Loop
     Pickup:
         TNT1 A 0 A_GiveInventory("BlueArmorForMegasphere_TO", 1)

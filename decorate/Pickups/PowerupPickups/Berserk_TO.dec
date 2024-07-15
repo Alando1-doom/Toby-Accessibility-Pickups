@@ -9,7 +9,7 @@ ACTOR Berserk_TO : CustomInventory replaces Berserk
     States
     {
     Spawn:
-        PSTR A 23 Bright A_SpawnItemEx("BerserkPickupChecker", 0, 0, 0, 0, 0, 0, 0, SXF_NOCHECKPOSITION, 0)
+        PSTR A 35 Bright A_SpawnItemEx("BerserkPickupChecker", 0, 0, 0, 0, 0, 0, 0, SXF_NOCHECKPOSITION, 0)
         PSTR A 1 Bright
         Loop
     Pickup:

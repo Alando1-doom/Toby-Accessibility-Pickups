@@ -7,7 +7,7 @@ ACTOR BioSuit : CustomInventory replaces RadSuit
     States
     {
     Spawn:
-        SUIT A 23 Bright A_SpawnItemEx("SuitPickupChecker", 0, 0, 0, 0, 0, 0, 0, SXF_NOCHECKPOSITION, 0)
+        SUIT A 35 Bright A_SpawnItemEx("SuitPickupChecker", 0, 0, 0, 0, 0, 0, 0, SXF_NOCHECKPOSITION, 0)
         SUIT A 1 Bright
         Loop
     Pickup:

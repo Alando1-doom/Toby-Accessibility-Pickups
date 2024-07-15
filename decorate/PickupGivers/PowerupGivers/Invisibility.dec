@@ -8,7 +8,7 @@ ACTOR Invisibility : CustomInventory replaces BlurSphere
     {
     Spawn:
         PINS A 0 Bright A_SpawnItemEx("BlurSpherePickupChecker", 0, 0, 0, 0, 0, 0, 0, SXF_NOCHECKPOSITION, 0)
-        PINS ABCDCB 6 Bright
+        PINS ABCDABCDABCD 5 Bright
         Loop
     Pickup:
         TNT1 A 0 A_GiveInventory("BlurSphere_TO", 1)
