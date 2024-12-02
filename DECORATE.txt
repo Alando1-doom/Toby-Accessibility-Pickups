@@ -1,30 +1,3 @@
-//Announcers
-//Armor announcers
-#include "decorate/Announcers/ArmorAnnouncers/Armor2Ann.dec"
-#include "decorate/Announcers/ArmorAnnouncers/ArmorAnn.dec"
-#include "decorate/Announcers/ArmorAnnouncers/ArmorBonusAnn.dec"
-
-//Health announcers
-#include "decorate/Announcers/HealthAnnouncers/HealthBonusAnn.dec"
-#include "decorate/Announcers/HealthAnnouncers/MedikitAnn.dec"
-#include "decorate/Announcers/HealthAnnouncers/StimpackAnn.dec"
-
-//Flashes
-//Armor flashes
-#include "decorate/Flashes/ArmorFlashes/Armor_ID2.dec"
-#include "decorate/Flashes/ArmorFlashes/Armor2_ID2.dec"
-#include "decorate/Flashes/ArmorFlashes/ArmorBonus_ID2.dec"
-
-//Health flashes
-#include "decorate/Flashes/HealthFlashes/HealthBonus_ID2.dec"
-#include "decorate/Flashes/HealthFlashes/Medikit_ID2.dec"
-#include "decorate/Flashes/HealthFlashes/Stimpack_ID2.dec"
-
-//Inventory checkers
-//Health and armor
-#include "decorate/InventoryCheckers/ArmorInventoryChecker.dec"
-#include "decorate/InventoryCheckers/HealthInventoryChecker.dec"
-
 //Pickup checkers
 #include "decorate/PickupCheckers/BaseHealthArmorPickupChecker.dec"
 //Armor pickup checkers

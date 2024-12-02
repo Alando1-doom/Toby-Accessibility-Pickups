@@ -13,7 +13,7 @@ ACTOR RedCard_TO : CustomInventory 13
         RKEY B 10 Bright
         Loop
     Pickup:
-        TNT1 A 0 A_PlaySound("keys/redkeycard")
+		TNT1 A 1 A_PlaySoundEx("keys/redkeycard", "Auto", 0, -1)
         TNT1 A 1 A_GiveInventory("RedCard", 1)
         Stop
     }

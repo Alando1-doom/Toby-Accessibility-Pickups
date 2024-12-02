@@ -13,7 +13,7 @@ ACTOR BlueCard_TO : CustomInventory 5
         BKEY B 10 Bright
         Loop
     Pickup:
-        TNT1 A 0 A_PlaySound("keys/bluekeycard")
+		TNT1 A 1 A_PlaySoundEx("keys/bluekeycard", "Auto", 0, -1)
         TNT1 A 1 A_GiveInventory("BlueCard", 1)
         Stop
     }

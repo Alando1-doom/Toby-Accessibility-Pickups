@@ -13,8 +13,8 @@ ACTOR SuperCharge : CustomInventory replaces Soulsphere
         SOUL ABCDCBABCDCB 5 Bright
         Loop
     Pickup:
-        TNT1 A 0 A_GiveInventory("Soulsphere_TO", 1)
-        TNT1 A 0 A_PlaySound("misc/soulann")
+		TNT1 A 1 A_PlaySoundEx("misc/soulann", "Auto", 0, -1)
+        TNT1 A 1 A_GiveInventory("Soulsphere_TO", 1)
         Stop
     }
 }

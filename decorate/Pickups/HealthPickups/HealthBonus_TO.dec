@@ -1,4 +1,4 @@
-ACTOR HealthBonus_TO : Health replaces HealthBonus
+ACTOR HealthBonus_OLD : Health
 {
     +COUNTITEM
     +INVENTORY.ALWAYSPICKUP
@@ -6,7 +6,6 @@ ACTOR HealthBonus_TO : Health replaces HealthBonus
     Inventory.MaxAmount 200
     Inventory.PickupMessage "$GOTHTHBONUS"
     Inventory.PickupSound "health/bonus"
-    Inventory.PickupFlash "HealthBonus_ID2"
     States
     {
     Spawn:
@@ -23,5 +22,35 @@ ACTOR HealthBonus_TO : Health replaces HealthBonus
         BON1 B 6
         BON1 B 0 Bright A_SpawnItemEx("HealthPickupChecker", 0, 0, 0, 0, 0, 0, 0, SXF_NOCHECKPOSITION, 0)
         Loop
+    }
+}
+
+
+ACTOR HealthBonus_TO : CustomInventory replaces HealthBonus
+{
+	+COUNTITEM
+    +INVENTORY.ALWAYSPICKUP
+    Inventory.PickupMessage "$GOTHTHBONUS"
+    Inventory.PickupSound "health/bonus"
+    States
+    {
+    Spawn:
+        BON1 A 6 Bright
+        BON1 A 0 Bright A_SpawnItemEx("HealthPickupChecker", 0, 0, 0, 0, 0, 0, 0, SXF_NOCHECKPOSITION, 0)
+        BON1 B 6 Bright
+        BON1 B 0 Bright A_SpawnItemEx("HealthPickupChecker", 0, 0, 0, 0, 0, 0, 0, SXF_NOCHECKPOSITION, 0)
+        BON1 C 6 Bright
+        BON1 C 0 Bright A_SpawnItemEx("HealthPickupChecker", 0, 0, 0, 0, 0, 0, 0, SXF_NOCHECKPOSITION, 0)
+        BON1 D 6 Bright
+        BON1 D 0 Bright A_SpawnItemEx("HealthPickupChecker", 0, 0, 0, 0, 0, 0, 0, SXF_NOCHECKPOSITION, 0)
+        BON1 C 6 Bright
+        BON1 C 0 Bright A_SpawnItemEx("HealthPickupChecker", 0, 0, 0, 0, 0, 0, 0, SXF_NOCHECKPOSITION, 0)
+        BON1 B 6 Bright
+        BON1 B 0 Bright A_SpawnItemEx("HealthPickupChecker", 0, 0, 0, 0, 0, 0, 0, SXF_NOCHECKPOSITION, 0)
+        Loop
+    Pickup:
+        TNT1 A 1 A_GiveInventory("HealthBonus", 1)
+		TNT1 A 1 A_PlaySoundEx("ann/healthbonus", "SoundSlot5", 0, -1)
+        Stop
     }
 }

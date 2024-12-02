@@ -1,11 +1,10 @@
-Actor ArmorBonus_TO : BasicArmorBonus replaces ArmorBonus
+Actor ArmorBonus_OLD : BasicArmorBonus
 {
     Radius 20
     Height 16
     Inventory.Pickupmessage "$GOTARMBONUS"
     Inventory.PickupSound "armor/bonus"
     Inventory.Icon "BON2A0"
-    Inventory.PickupFlash "ArmorBonus_ID2"
     Armor.Savepercent 33.335
     Armor.Saveamount 1
     Armor.Maxsaveamount 200
@@ -27,5 +26,37 @@ Actor ArmorBonus_TO : BasicArmorBonus replaces ArmorBonus
         BON2 B 6
         BON2 B 0 Bright A_SpawnItemEx("ArmorPickupChecker_Bonus", 0, 0, 0, 0, 0, 0, 0, SXF_NOCHECKPOSITION, 0)
         Loop
+    }
+}
+
+
+ACTOR ArmorBonus_TO : CustomInventory replaces ArmorBonus
+{
+    Radius 20
+    Height 16
+    Inventory.Pickupmessage "$GOTARMBONUS"
+    Inventory.PickupSound "armor/bonus"
+	+COUNTITEM
+    +INVENTORY.ALWAYSPICKUP
+    States
+    {
+    Spawn:
+        BON2 A 6 Bright
+        BON2 A 0 Bright A_SpawnItemEx("ArmorPickupChecker_Bonus", 0, 0, 0, 0, 0, 0, 0, SXF_NOCHECKPOSITION, 0)
+        BON2 B 6 Bright
+        BON2 B 0 Bright A_SpawnItemEx("ArmorPickupChecker_Bonus", 0, 0, 0, 0, 0, 0, 0, SXF_NOCHECKPOSITION, 0)
+        BON2 C 6 Bright
+        BON2 C 0 Bright A_SpawnItemEx("ArmorPickupChecker_Bonus", 0, 0, 0, 0, 0, 0, 0, SXF_NOCHECKPOSITION, 0)
+        BON2 D 6 Bright
+        BON2 D 0 Bright A_SpawnItemEx("ArmorPickupChecker_Bonus", 0, 0, 0, 0, 0, 0, 0, SXF_NOCHECKPOSITION, 0)
+        BON2 C 6 Bright
+        BON2 C 0 Bright A_SpawnItemEx("ArmorPickupChecker_Bonus", 0, 0, 0, 0, 0, 0, 0, SXF_NOCHECKPOSITION, 0)
+        BON2 B 6 Bright
+        BON2 B 0 Bright A_SpawnItemEx("ArmorPickupChecker_Bonus", 0, 0, 0, 0, 0, 0, 0, SXF_NOCHECKPOSITION, 0)
+        Loop
+    Pickup:
+        TNT1 A 1 A_GiveInventory("ArmorBonus", 1)
+		TNT1 A 1 A_PlaySoundEx("ann/armorbonus", "SoundSlot5", 0, -1)
+        Stop
     }
 }

@@ -11,12 +11,12 @@ ACTOR NightVisors : CustomInventory replaces Infrared
         PVIS B 6
         PVIS A 6 Bright
         PVIS B 6
-	PVIS A 6 Bright
+		PVIS A 6 Bright
         PVIS B 6
         Loop
     Pickup:
-        TNT1 A 0 A_PlaySound("ann/visor")
-        TNT1 A 0 A_GiveInventory("Infrared_TO", 1)
+		TNT1 A 1 A_PlaySoundEx("ann/visor", "Auto", 0, -1)
+        TNT1 A 1 A_GiveInventory("Infrared_TO", 1)
         Stop
     }
 }
