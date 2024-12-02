@@ -14,7 +14,7 @@ ACTOR YellowCard_TO : CustomInventory 6
         YKEY B 10 Bright
         Loop
     Pickup:
-       TNT1 A 0 A_PlaySound("keys/yellowkeycard")
+	   TNT1 A 1 A_PlaySoundEx("keys/yellowkeycard", "Auto", 0, -1)
        TNT1 A 1 A_GiveInventory("YellowCard", 1)
        Stop
     }

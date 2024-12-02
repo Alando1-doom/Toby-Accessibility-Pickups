@@ -13,7 +13,7 @@ Actor YellowSkullKey_TO : CustomInventory 39
         YSKU B 10 Bright
         Loop
     Pickup:
-        TNT1 A 0 A_PlaySound("keys/yellowskull")
+		TNT1 A 1 A_PlaySoundEx("keys/yellowskull", "Auto", 0, -1)
         TNT1 A 1 A_GiveInventory("YellowSkull", 1)
         Stop
     }

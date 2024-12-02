@@ -13,9 +13,9 @@ ACTOR Megasphere_TO : CustomInventory replaces Megasphere
         MEGA ABCDABCDABCD 5 BRIGHT
         Loop
     Pickup:
-        TNT1 A 0 A_GiveInventory("BlueArmorForMegasphere_TO", 1)
-        TNT1 A 0 A_GiveInventory("MegasphereHealth_TO", 1)
-        TNT1 A 0 A_PlaySound("misc/megaann")
+		TNT1 A 1 A_PlaySoundEx("misc/megaann", "Auto", 0, -1)
+        TNT1 A 1 A_GiveInventory("BlueArmorForMegasphere_TO", 1)
+        TNT1 A 1 A_GiveInventory("MegasphereHealth_TO", 1)
         Stop
     }
 }

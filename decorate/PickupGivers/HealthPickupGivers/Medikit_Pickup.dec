@@ -2,20 +2,18 @@ ACTOR Medikit_Pickup : CustomInventory replaces Medikit
 {
     Inventory.PickupMessage "$GOTMEDIKIT"
     Inventory.PickupSound "health/medkit"
-    Inventory.PickupFlash "Medikit_ID2"
     States
     {
     Spawn:
         MEDI A 1 A_SpawnItemEx("HealthPickupChecker_Medikit", 0, 0, 0, 0, 0, 0, 0, SXF_NOCHECKPOSITION, 0)
-        MEDI A 30
-        MEDI A 1
+        MEDI A 35
         Loop
     Pickup:
         TNT1 A 1 A_JumpIf(health>=100, "NoPickup")
         TNT1 A 1 A_GiveInventory("Medikit_TO", 1)
+		TNT1 A 1 A_PlaySoundEx("ann/medikit", "SoundSlot5", 0, -1)
         Stop
     NoPickup:
-        //TNT1 A 1 ACS_NamedExecuteWithResult("InventoryFullBeeper")
         TNT1 A 1 A_PlaySoundEx("stat/armor/full", "SoundSlot6", 0, 0)
         Fail
     }

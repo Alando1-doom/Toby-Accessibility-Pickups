@@ -2,7 +2,6 @@ ACTOR Stimpack_Pickup : CustomInventory replaces Stimpack
 {
     Inventory.PickupMessage "$GOTSTIM"
     Inventory.PickupSound "health/stim"
-    Inventory.PickupFlash "Stimpack_ID2"
     States
     {
     Spawn:
@@ -13,9 +12,9 @@ ACTOR Stimpack_Pickup : CustomInventory replaces Stimpack
     Pickup:
         TNT1 A 1 A_JumpIf(health>=100, "NoPickup")
         TNT1 A 1 A_GiveInventory("Stimpack_TO", 1)
+		TNT1 A 1 A_PlaySoundEx("ann/stimpack", "SoundSlot5", 0, -1)
         Stop
     NoPickup:
-        //TNT1 A 1 ACS_NamedExecuteWithResult("InventoryFullBeeper")
         TNT1 A 1 A_PlaySoundEx("stat/armor/full", "SoundSlot6", 0, 0)
         Fail
     }

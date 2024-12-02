@@ -13,8 +13,8 @@ ACTOR Shield : CustomInventory replaces InvulnerabilitySphere
         PINV ABCDCB 6 Bright
         Loop
     Pickup:
-        TNT1 A 0 A_GiveInventory("InvulnerabilitySphere_TO", 1)
-        TNT1 A 0 A_PlaySound("misc/invann")
+		TNT1 A 1 A_PlaySoundEx("misc/invann", "Auto", 0, -1)
+        TNT1 A 1 A_GiveInventory("InvulnerabilitySphere_TO", 1)
         Stop
     }
 }

@@ -14,7 +14,7 @@ ACTOR BlueSkullKey_TO : CustomInventory 40
         BSKU B 10 Bright
         Loop
     Pickup:
-        TNT1 A 0 A_PlaySound("keys/blueskull")
+		TNT1 A 1 A_PlaySoundEx("keys/blueskull", "Auto", 0, -1)
         TNT1 A 1 A_GiveInventory("BlueSkull", 1)
         Stop
     }

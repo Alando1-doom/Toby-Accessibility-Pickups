@@ -12,7 +12,6 @@ ACTOR BlueArmor_TO : BasicArmorPickup
     {
     Spawn:
         ARM2 A 6 A_SpawnItemEx("ArmorPickupChecker", 0, 0, 0, 0, 0, 0, 0, SXF_NOCHECKPOSITION, 0)
-        ARM2 A 0 A_SpawnItemEx("ArmorInventoryChecker", 0, 0, 0, 0, 0, 0, 0, SXF_NOCHECKPOSITION, 0)
         ARM2 B 6 Bright
         ARM2 A 6
         ARM2 B 6 Bright
