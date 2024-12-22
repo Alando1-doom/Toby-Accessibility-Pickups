@@ -9,18 +9,12 @@ ACTOR HealthBonus_OLD : Health
     States
     {
     Spawn:
-        BON1 A 6
-        BON1 A 0 Bright A_SpawnItemEx("HealthPickupChecker", 0, 0, 0, 0, 0, 0, 0, SXF_NOCHECKPOSITION, 0)
-        BON1 B 6
-        BON1 B 0 Bright A_SpawnItemEx("HealthPickupChecker", 0, 0, 0, 0, 0, 0, 0, SXF_NOCHECKPOSITION, 0)
-        BON1 C 6
-        BON1 C 0 Bright A_SpawnItemEx("HealthPickupChecker", 0, 0, 0, 0, 0, 0, 0, SXF_NOCHECKPOSITION, 0)
-        BON1 D 6
-        BON1 D 0 Bright A_SpawnItemEx("HealthPickupChecker", 0, 0, 0, 0, 0, 0, 0, SXF_NOCHECKPOSITION, 0)
-        BON1 C 6
-        BON1 C 0 Bright A_SpawnItemEx("HealthPickupChecker", 0, 0, 0, 0, 0, 0, 0, SXF_NOCHECKPOSITION, 0)
-        BON1 B 6
-        BON1 B 0 Bright A_SpawnItemEx("HealthPickupChecker", 0, 0, 0, 0, 0, 0, 0, SXF_NOCHECKPOSITION, 0)
+        BON1 A 6 Bright A_SpawnItemEx("HealthPickupChecker", 0, 0, 0, 0, 0, 0, 0, SXF_NOCHECKPOSITION, 0)
+        BON1 B 6 Bright
+        BON1 C 6 Bright
+        BON1 D 6 Bright
+        BON1 C 6 Bright
+        BON1 B 6 Bright
         Loop
     }
 }
@@ -35,18 +29,12 @@ ACTOR HealthBonus_TO : CustomInventory replaces HealthBonus
     States
     {
     Spawn:
-        BON1 A 6 Bright
-        BON1 A 0 Bright A_SpawnItemEx("HealthPickupChecker", 0, 0, 0, 0, 0, 0, 0, SXF_NOCHECKPOSITION, 0)
+        BON1 A 6 Bright A_SpawnItemEx("HealthPickupChecker", 0, 0, 0, 0, 0, 0, 0, SXF_NOCHECKPOSITION, 0)
         BON1 B 6 Bright
-        BON1 B 0 Bright A_SpawnItemEx("HealthPickupChecker", 0, 0, 0, 0, 0, 0, 0, SXF_NOCHECKPOSITION, 0)
         BON1 C 6 Bright
-        BON1 C 0 Bright A_SpawnItemEx("HealthPickupChecker", 0, 0, 0, 0, 0, 0, 0, SXF_NOCHECKPOSITION, 0)
         BON1 D 6 Bright
-        BON1 D 0 Bright A_SpawnItemEx("HealthPickupChecker", 0, 0, 0, 0, 0, 0, 0, SXF_NOCHECKPOSITION, 0)
         BON1 C 6 Bright
-        BON1 C 0 Bright A_SpawnItemEx("HealthPickupChecker", 0, 0, 0, 0, 0, 0, 0, SXF_NOCHECKPOSITION, 0)
         BON1 B 6 Bright
-        BON1 B 0 Bright A_SpawnItemEx("HealthPickupChecker", 0, 0, 0, 0, 0, 0, 0, SXF_NOCHECKPOSITION, 0)
         Loop
     Pickup:
         TNT1 A 1 A_GiveInventory("HealthBonus", 1)

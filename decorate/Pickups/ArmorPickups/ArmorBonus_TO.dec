@@ -13,18 +13,12 @@ Actor ArmorBonus_OLD : BasicArmorBonus
     States
     {
     Spawn:
-        BON2 A 6
-        BON2 A 0 Bright A_SpawnItemEx("ArmorPickupChecker_Bonus", 0, 0, 0, 0, 0, 0, 0, SXF_NOCHECKPOSITION, 0)
-        BON2 B 6
-        BON2 B 0 Bright A_SpawnItemEx("ArmorPickupChecker_Bonus", 0, 0, 0, 0, 0, 0, 0, SXF_NOCHECKPOSITION, 0)
-        BON2 C 6
-        BON2 C 0 Bright A_SpawnItemEx("ArmorPickupChecker_Bonus", 0, 0, 0, 0, 0, 0, 0, SXF_NOCHECKPOSITION, 0)
-        BON2 D 6
-        BON2 D 0 Bright A_SpawnItemEx("ArmorPickupChecker_Bonus", 0, 0, 0, 0, 0, 0, 0, SXF_NOCHECKPOSITION, 0)
-        BON2 C 6
-        BON2 C 0 Bright A_SpawnItemEx("ArmorPickupChecker_Bonus", 0, 0, 0, 0, 0, 0, 0, SXF_NOCHECKPOSITION, 0)
-        BON2 B 6
-        BON2 B 0 Bright A_SpawnItemEx("ArmorPickupChecker_Bonus", 0, 0, 0, 0, 0, 0, 0, SXF_NOCHECKPOSITION, 0)
+        BON2 A 6 Bright A_SpawnItemEx("ArmorPickupChecker_Bonus", 0, 0, 0, 0, 0, 0, 0, SXF_NOCHECKPOSITION, 0)
+        BON2 B 6 Bright
+        BON2 C 6 Bright
+        BON2 D 6 Bright
+        BON2 C 6 Bright
+        BON2 B 6 Bright
         Loop
     }
 }
@@ -41,18 +35,12 @@ ACTOR ArmorBonus_TO : CustomInventory replaces ArmorBonus
     States
     {
     Spawn:
-        BON2 A 6 Bright
-        BON2 A 0 Bright A_SpawnItemEx("ArmorPickupChecker_Bonus", 0, 0, 0, 0, 0, 0, 0, SXF_NOCHECKPOSITION, 0)
+        BON2 A 6 Bright A_SpawnItemEx("ArmorPickupChecker_Bonus", 0, 0, 0, 0, 0, 0, 0, SXF_NOCHECKPOSITION, 0)
         BON2 B 6 Bright
-        BON2 B 0 Bright A_SpawnItemEx("ArmorPickupChecker_Bonus", 0, 0, 0, 0, 0, 0, 0, SXF_NOCHECKPOSITION, 0)
         BON2 C 6 Bright
-        BON2 C 0 Bright A_SpawnItemEx("ArmorPickupChecker_Bonus", 0, 0, 0, 0, 0, 0, 0, SXF_NOCHECKPOSITION, 0)
         BON2 D 6 Bright
-        BON2 D 0 Bright A_SpawnItemEx("ArmorPickupChecker_Bonus", 0, 0, 0, 0, 0, 0, 0, SXF_NOCHECKPOSITION, 0)
         BON2 C 6 Bright
-        BON2 C 0 Bright A_SpawnItemEx("ArmorPickupChecker_Bonus", 0, 0, 0, 0, 0, 0, 0, SXF_NOCHECKPOSITION, 0)
         BON2 B 6 Bright
-        BON2 B 0 Bright A_SpawnItemEx("ArmorPickupChecker_Bonus", 0, 0, 0, 0, 0, 0, 0, SXF_NOCHECKPOSITION, 0)
         Loop
     Pickup:
         TNT1 A 1 A_GiveInventory("ArmorBonus", 1)
