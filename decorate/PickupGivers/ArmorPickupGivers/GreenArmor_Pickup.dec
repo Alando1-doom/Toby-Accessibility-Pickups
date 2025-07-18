@@ -15,12 +15,17 @@ ACTOR GreenArmor_Pickup : CustomInventory replaces GreenArmor
         ARM1 B 6 Bright
         Loop
     Pickup:
+		TNT1 A 1 A_JumpIfArmorType("BlueArmor", "NoPickup", 200)
         TNT1 A 1 A_JumpIfArmorType("BlueArmor_TO", "NoPickup", 200)
+		TNT1 A 1 A_JumpIfArmorType("BlueArmorForMegasphere", "NoPickup", 200)
         TNT1 A 1 A_JumpIfArmorType("BlueArmorForMegasphere_TO", "NoPickup", 200)
+		TNT1 A 1 A_JumpIfArmorType("BlueArmor", "NoPickup", 100)
         TNT1 A 1 A_JumpIfArmorType("BlueArmor_TO", "NoPickup", 100)
+		TNT1 A 1 A_JumpIfArmorType("BlueArmorForMegasphere", "NoPickup", 100)
         TNT1 A 1 A_JumpIfArmorType("BlueArmorForMegasphere_TO", "NoPickup", 100)
         TNT1 A 1 A_JumpIfArmorType("BlueArmor_TO", "OverrideBlue", 99)
         TNT1 A 1 A_JumpIfArmorType("BlueArmorForMegasphere_TO", "OverrideBlue", 99)
+		TNT1 A 1 A_JumpIfArmorType("GreenArmor", "NoPickup", 100)
         TNT1 A 1 A_JumpIfArmorType("GreenArmor_TO", "NoPickup", 100)
         TNT1 A 1 A_GiveInventory("GreenArmor_TO", 1)
 		TNT1 A 1 A_PlaySoundEx("ann/armor", "SoundSlot5", 0, -1)

@@ -15,7 +15,9 @@ ACTOR BlueArmor_Pickup : CustomInventory replaces BlueArmor
         ARM2 B 6 Bright
         Loop
     Pickup:
+		TNT1 A 1 A_JumpIfArmorType("BlueArmor", "NoPickup", 200)
         TNT1 A 1 A_JumpIfArmorType("BlueArmor_TO", "NoPickup", 200)
+		TNT1 A 1 A_JumpIfArmorType("BlueArmorForMegasphere", "NoPickup", 200)
         TNT1 A 1 A_JumpIfArmorType("BlueArmorForMegasphere_TO", "NoPickup", 200)
         TNT1 A 1 A_GiveInventory("BlueArmor_TO", 1)
 		TNT1 A 1 A_PlaySoundEx("ann/armor2", "SoundSlot5", 0, -1)
