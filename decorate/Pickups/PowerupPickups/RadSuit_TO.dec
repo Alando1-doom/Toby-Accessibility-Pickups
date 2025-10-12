@@ -1,7 +1,5 @@
 ACTOR RadSuit_TO : PowerupGiver
 {
-    Game Doom
-    SpawnID 136
     Height 46
     +INVENTORY.AUTOACTIVATE
     +INVENTORY.ALWAYSPICKUP

@@ -1,8 +1,5 @@
 ACTOR Infrared_TO : PowerupGiver
 {
-    Game Doom
-    SpawnID 138
-    +COUNTITEM
     +INVENTORY.AUTOACTIVATE
     +INVENTORY.ALWAYSPICKUP
     Inventory.MaxAmount 0

@@ -1,8 +1,5 @@
 ACTOR Allmap_TO : MapRevealer
 {
-    Game Doom
-    SpawnID 137
-    +COUNTITEM
     +INVENTORY.FANCYPICKUPSOUND
     +INVENTORY.ALWAYSPICKUP
     Inventory.MaxAmount 0

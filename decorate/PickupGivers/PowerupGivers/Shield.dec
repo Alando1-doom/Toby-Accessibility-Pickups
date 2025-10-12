@@ -1,7 +1,5 @@
 ACTOR Shield : CustomInventory replaces InvulnerabilitySphere
 {
-    Game Doom
-    SpawnID 132
     +COUNTITEM
     +INVENTORY.ALWAYSPICKUP
     Inventory.PickupMessage "$GOTINVUL"
