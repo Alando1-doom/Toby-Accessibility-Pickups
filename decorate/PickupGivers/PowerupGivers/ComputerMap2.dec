@@ -1,7 +1,5 @@
 ACTOR ComputerMap2 : CustomInventory replaces Allmap
 {
-    Game Doom
-    SpawnID 132
     +COUNTITEM
     +INVENTORY.ALWAYSPICKUP
     Inventory.PickupSound "misc/getmap"

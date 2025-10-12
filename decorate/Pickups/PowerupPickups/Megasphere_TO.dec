@@ -1,7 +1,5 @@
 ACTOR Megasphere_TO : CustomInventory replaces Megasphere
 {
-    Game Doom
-    SpawnID 132
     +COUNTITEM
     +INVENTORY.ALWAYSPICKUP
     Inventory.PickupMessage "$GOTMSPHERE"

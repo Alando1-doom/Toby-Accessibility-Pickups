@@ -1,9 +1,5 @@
-//For manipulation in DeHackEd
 ACTOR Soulsphere_TO : Health
 {
-    Game Doom
-    SpawnID 25
-    +COUNTITEM
     +INVENTORY.AUTOACTIVATE
     +INVENTORY.ALWAYSPICKUP
     +INVENTORY.FANCYPICKUPSOUND

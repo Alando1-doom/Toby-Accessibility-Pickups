@@ -1,7 +1,5 @@
 ACTOR SuperCharge : CustomInventory replaces Soulsphere
 {
-    Game Doom
-    SpawnID 132
     +COUNTITEM
     +INVENTORY.ALWAYSPICKUP
     Inventory.PickupMessage "$GOTSUPER"

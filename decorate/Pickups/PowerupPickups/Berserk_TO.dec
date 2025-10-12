@@ -1,7 +1,5 @@
 ACTOR Berserk_TO : CustomInventory replaces Berserk
 {
-    Game Doom
-    SpawnID 134
     +COUNTITEM
     +INVENTORY.ALWAYSPICKUP
     Inventory.PickupMessage "$GOTBERSERK"

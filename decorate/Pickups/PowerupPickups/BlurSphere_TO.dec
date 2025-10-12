@@ -1,8 +1,5 @@
 ACTOR BlurSphere_TO : PowerupGiver
 {
-    Game Doom
-    SpawnID 135
-    +COUNTITEM
     +VISIBILITYPULSE
     +INVENTORY.AUTOACTIVATE
     +INVENTORY.ALWAYSPICKUP
