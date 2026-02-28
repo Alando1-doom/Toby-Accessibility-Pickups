@@ -4,6 +4,7 @@ ACTOR YellowCard_TO : CustomInventory 6
     inventory.pickupmessage "You got the yellow key card"
     inventory.pickupsound "misc/keycard"
     -COUNTITEM
+	Tag "Yellow Key Card"
     States
     {
     Spawn:

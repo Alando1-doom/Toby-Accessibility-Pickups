@@ -4,6 +4,7 @@ ACTOR BioSuit : CustomInventory replaces RadSuit
     +INVENTORY.ALWAYSPICKUP
     Inventory.PickupSound "misc/getsuit"
     Inventory.PickupMessage "$GOTSUIT"
+	Tag "Radiation Shielding Suit"
     States
     {
     Spawn:

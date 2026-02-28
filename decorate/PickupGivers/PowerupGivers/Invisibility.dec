@@ -4,6 +4,7 @@ ACTOR Invisibility : CustomInventory replaces BlurSphere
     +INVENTORY.ALWAYSPICKUP
     Inventory.PickupSound "misc/getinvs"
     Inventory.PickupMessage "$GOTINVIS"
+	Tag "Blur Sphere"
     States
     {
     Spawn:

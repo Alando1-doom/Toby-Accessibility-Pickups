@@ -3,6 +3,7 @@ Actor YellowSkullKey_TO : CustomInventory 39
     inventory.pickupmessage "You got the yellow skull key"
     inventory.pickupsound "misc/skullkey"
     -COUNTITEM
+	Tag "Yellow Skull Key"
     States
     {
     Spawn:

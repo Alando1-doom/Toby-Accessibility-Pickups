@@ -4,6 +4,7 @@ ACTOR ComputerMap2 : CustomInventory replaces Allmap
     +INVENTORY.ALWAYSPICKUP
     Inventory.PickupSound "misc/getmap"
     Inventory.PickupMessage "$GOTMAP"
+	Tag "Computer Map"
     States
     {
     Spawn:

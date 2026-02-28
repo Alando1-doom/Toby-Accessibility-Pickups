@@ -4,6 +4,7 @@ ACTOR NightVisors : CustomInventory replaces Infrared
     +INVENTORY.ALWAYSPICKUP
     Inventory.PickupSound "misc/getvisor"
     Inventory.PickupMessage "$GOTVISOR"
+	Tag "Night Visors"
     States
     {
     Spawn:

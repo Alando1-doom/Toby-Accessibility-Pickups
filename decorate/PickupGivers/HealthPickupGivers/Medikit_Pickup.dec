@@ -2,6 +2,7 @@ ACTOR Medikit_Pickup : CustomInventory replaces Medikit
 {
     Inventory.PickupMessage "$GOTMEDIKIT"
     Inventory.PickupSound "health/medkit"
+	Tag "Medikit"
     States
     {
     Spawn:

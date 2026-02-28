@@ -32,6 +32,7 @@ ACTOR ArmorBonus_TO : CustomInventory replaces ArmorBonus
     Inventory.PickupSound "armor/bonus"
 	+COUNTITEM
     +INVENTORY.ALWAYSPICKUP
+	Tag "Armor Bonus"
     States
     {
     Spawn:

@@ -4,6 +4,7 @@ ACTOR Shield : CustomInventory replaces InvulnerabilitySphere
     +INVENTORY.ALWAYSPICKUP
     Inventory.PickupMessage "$GOTINVUL"
     Inventory.PickupSound "misc/getinv"
+	Tag "Invulnerability Sphere"
     States
     {
     Spawn:
