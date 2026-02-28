@@ -4,6 +4,7 @@ ACTOR BlueArmor_Pickup : CustomInventory replaces BlueArmor
     Height 16
     Inventory.Pickupmessage "$GOTMEGA"
     Inventory.PickupSound "armor/blue"
+	Tag "Mega Armor"
     States
     {
     Spawn:

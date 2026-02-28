@@ -4,6 +4,7 @@ ACTOR GreenArmor_Pickup : CustomInventory replaces GreenArmor
     Height 16
     Inventory.Pickupmessage "$GOTARMOR"
     Inventory.PickupSound "armor/green"
+	Tag "Green Armor"
     States
     {
     Spawn:

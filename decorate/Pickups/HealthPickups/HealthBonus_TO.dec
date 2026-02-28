@@ -26,6 +26,7 @@ ACTOR HealthBonus_TO : CustomInventory replaces HealthBonus
     +INVENTORY.ALWAYSPICKUP
     Inventory.PickupMessage "$GOTHTHBONUS"
     Inventory.PickupSound "health/bonus"
+	Tag "Health Bonus"
     States
     {
     Spawn:

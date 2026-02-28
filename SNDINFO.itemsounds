@@ -20,13 +20,5 @@ armor/bonus                     "sounds/Items/dsarmbon.wav"
 armor/green                     "sounds/Items/dsarm1.ogg"
 armor/blue                      "sounds/Items/dsarm2.wav"
 
-//Announcer
-ann/healthbonus                 "sounds/Items/dshbonan.ogg"
-ann/stimpack                    "sounds/Items/dsstiman.ogg"
-ann/medikit                     "sounds/Items/dsmedann.ogg"
-ann/armorbonus                  "sounds/Items/dsabonan.ogg"
-ann/armor                       "sounds/Items/dsarm1an.ogg"
-ann/armor2                      "sounds/Items/dsarm2an.ogg"
-
 //Status Full - Same sound used for other items, not just armor
 stat/armor/full                 armfull

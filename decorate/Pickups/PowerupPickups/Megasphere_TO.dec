@@ -4,6 +4,7 @@ ACTOR Megasphere_TO : CustomInventory replaces Megasphere
     +INVENTORY.ALWAYSPICKUP
     Inventory.PickupMessage "$GOTMSPHERE"
     Inventory.PickupSound "misc/getmega"
+	Tag "Mega Sphere"
     States
     {
     Spawn:

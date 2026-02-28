@@ -3,6 +3,7 @@ ACTOR RedCard_TO : CustomInventory 13
     inventory.pickupmessage "You got the red key card."
     inventory.pickupsound "misc/keycard"
     -COUNTITEM
+	Tag "Red Key Card"
     States
     {
     Spawn:

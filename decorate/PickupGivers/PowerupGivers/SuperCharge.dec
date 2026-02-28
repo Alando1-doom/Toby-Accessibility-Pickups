@@ -4,6 +4,7 @@ ACTOR SuperCharge : CustomInventory replaces Soulsphere
     +INVENTORY.ALWAYSPICKUP
     Inventory.PickupMessage "$GOTSUPER"
     Inventory.PickupSound "misc/getsoul"
+	Tag "Soul Sphere"
     States
     {
     Spawn:

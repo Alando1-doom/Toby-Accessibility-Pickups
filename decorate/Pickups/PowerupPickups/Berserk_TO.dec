@@ -4,6 +4,7 @@ ACTOR Berserk_TO : CustomInventory replaces Berserk
     +INVENTORY.ALWAYSPICKUP
     Inventory.PickupMessage "$GOTBERSERK"
     Inventory.PickupSound "misc/getbers"
+	Tag "Berserk Pack"
     States
     {
     Spawn:

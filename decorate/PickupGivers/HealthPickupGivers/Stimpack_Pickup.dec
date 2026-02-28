@@ -2,6 +2,7 @@ ACTOR Stimpack_Pickup : CustomInventory replaces Stimpack
 {
     Inventory.PickupMessage "$GOTSTIM"
     Inventory.PickupSound "health/stim"
+	Tag "Stimpack"
     States
     {
     Spawn:

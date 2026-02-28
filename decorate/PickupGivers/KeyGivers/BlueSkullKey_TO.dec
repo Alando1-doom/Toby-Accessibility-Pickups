@@ -4,6 +4,7 @@ ACTOR BlueSkullKey_TO : CustomInventory 40
     inventory.pickupmessage "You got the blue skull key"
     inventory.pickupsound "misc/skullkey"
     -COUNTITEM
+	Tag "Blue Skull Key"
     States
     {
     Spawn:
